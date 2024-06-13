@@ -11,5 +11,12 @@ function getRandomElementFromArray(arr) {
     const randomIndex = Math.floor(Math.random() * arr.length);
     return arr[randomIndex];
 }
-
+function avgarr(arr){
+    let sum = 0;
+    for (let i = 0; i < arr.length; i++) {
+        sum += arr[i];
+    }
+    return sum/arr.length;
+    }
+module.exports.getAvgFromArray =avgarr;
 module.exports.getRandomElementFromArray = getRandomElementFromArray;
