@@ -16,7 +16,7 @@ function avgarr(arr){
     for (let i = 0; i < arr.length; i++) {
         sum += arr[i];
     }
-    return sum/arr.length;
+    return Math.round(sum/arr.length);
     }
 module.exports.getAvgFromArray =avgarr;
 module.exports.getRandomElementFromArray = getRandomElementFromArray;
